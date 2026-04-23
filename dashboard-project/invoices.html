@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invoices – Wolf Ry</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <h1 class="page-title">Dashboard</h1>
+
+  <div class="app-shell">
+
+    <nav class="sidebar">
+      <div class="sidebar-brand">🐺 Wolf Ry</div>
+      <div class="sidebar-section-label">Platform</div>
+      <a class="sidebar-item" href="dashboard.html" data-page="dashboard.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="1" y="1" width="6" height="6" rx="1"/>
+          <rect x="9" y="1" width="6" height="6" rx="1"/>
+          <rect x="1" y="9" width="6" height="6" rx="1"/>
+          <rect x="9" y="9" width="6" height="6" rx="1"/>
+        </svg>
+        Dashboard
+      </a>
+      <a class="sidebar-item" href="team.html" data-page="team.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="6" cy="5" r="2.5"/>
+          <path d="M1 13c0-2.76 2.24-5 5-5s5 2.24 5 5"/>
+          <circle cx="12" cy="5" r="2"/>
+          <path d="M14 13c0-2.21-1.34-4-3-4"/>
+        </svg>
+        Team
+      </a>
+      <div class="sidebar-section-label">Documents</div>
+      <a class="sidebar-item" href="invoices.html" data-page="invoices.html">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="2" y="1" width="12" height="14" rx="1.5"/>
+          <line x1="5" y1="5" x2="11" y2="5"/>
+          <line x1="5" y1="8" x2="11" y2="8"/>
+          <line x1="5" y1="11" x2="9" y2="11"/>
+        </svg>
+        Invoices
+      </a>
+      <div class="sidebar-spacer"></div>
+      <a class="settings-row" href="#">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="8" cy="8" r="2.5"/>
+          <path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M3.05 12.95l1.06-1.06M11.89 4.11l1.06-1.06"/>
+        </svg>
+        Settings
+      </a>
+      <div class="sidebar-footer">
+        <div class="user-row">
+          <div class="avatar">WR</div>
+          <div class="user-info">
+            <div class="user-name">Wolf Ry</div>
+            <div class="user-email">john.doe@tura.fi</div>
+          </div>
+          <span class="kebab">&#8943;</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <div class="section-title">Invoices</div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Invoice ID</th>
+              <th>Status</th>
+              <th>Payment Method</th>
+              <th class="text-right">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">INVID001</td>
+              <td><span class="badge status-paid">Paid</span></td>
+              <td>Credit Card</td>
+              <td class="text-right">&#8364;250.00</td>
+            </tr>
+            <tr>
+              <td class="mono">INVID002</td>
+              <td><span class="badge status-pending">Pending</span></td>
+              <td>PayPal</td>
+              <td class="text-right">&#8364;150.00</td>
+            </tr>
+            <tr>
+              <td class="mono">INVID003</td>
+              <td><span class="badge status-unpaid">Unpaid</span></td>
+              <td>Bank Transfer</td>
+              <td class="text-right">&#8364;300.00</td>
+            </tr>
+            <tr>
+              <td class="mono">INVID004</td>
+              <td><span class="badge status-paid">Paid</span></td>
+              <td>Credit Card</td>
+              <td class="text-right">&#8364;450.00</td>
+            </tr>
+            <tr>
+              <td class="mono">INVID005</td>
+              <td><span class="badge status-paid">Paid</span></td>
+              <td>PayPal</td>
+              <td class="text-right">&#8364;350.00</td>
+            </tr>
+            <tr>
+              <td class="mono">INVID006</td>
+              <td><span class="badge status-pending">Pending</span></td>
+              <td>Bank Transfer</td>
+              <td class="text-right">&#8364;300.00</td>
+            </tr>
+            <tr>
+              <td class="mono">INVID007</td>
+              <td><span class="badge status-unpaid">Unpaid</span></td>
+              <td>Credit Card</td>
+              <td class="text-right">&#8364;300.00</td>
+            </tr>
+            <tr class="bg-faint">
+              <td class="fw-600" colspan="3">Total</td>
+              <td class="text-right fw-600">&#8364;2,500.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/sidebar.js"></script>
+</body>
+</html>

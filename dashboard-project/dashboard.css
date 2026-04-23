@@ -1,0 +1,39 @@
+/* ── Stats Row (Dashboard only) ── */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stat-highlight {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.stat-highlight.good  { color: #16a34a; }
+.stat-highlight.bad   { color: #ea580c; }
+
+.stat-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+}

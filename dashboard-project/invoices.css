@@ -1,0 +1,20 @@
+/* ── Invoices Page Specific Styles ── */
+
+/* Right-align amount column header */
+th.text-right {
+  text-align: right;
+}
+
+/* Invoice ID monospace column */
+.mono {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+/* Total row */
+.total-row td {
+  font-weight: 600;
+  background: #fafafa;
+  border-top: 1px solid var(--border);
+}

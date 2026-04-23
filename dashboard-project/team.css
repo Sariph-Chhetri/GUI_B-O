@@ -1,0 +1,18 @@
+/* ── Team Page Specific Styles ── */
+
+/* Slightly larger row height for team page */
+.team-table td {
+  padding: 10px 12px;
+}
+
+/* Role label styling */
+.role-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Salary / number columns */
+.amount-col {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+}
